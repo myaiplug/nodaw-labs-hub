@@ -1,11 +1,11 @@
 const store = [
   { name:'NoDAW Labs Store', blurb:'Official Shopify storefront - gear, merch, and drops.', href:'https://www.nodawlabs.com', host:'nodawlabs.com' },
   { name:'NoDAW Gumroad', blurb:'Digital products, kits, and Producer & Syrup gear.', href:'https://nodaw.gumroad.com', host:'nodaw.gumroad.com' },
+  { name:'Liminal AI Stem Splitter', blurb:'Local vocal & instrument separation for Windows. Shopify product page (Gumroad free demo at nodaw.gumroad.com/l/Liminal).', href:'https://www.nodawlabs.com/products/liminal-ai-stem-splitter', host:'nodawlabs.com' },
 ];
 const apps = [
   { name:'reTUNE[432]', blurb:'432Hz retuning engine.', href:'https://retune-432.vercel.app/', host:'retune-432.vercel.app' },
   { name:'Harmonic Reality Warper', blurb:'Harmonic-series processor.', href:'https://harmonic-reality-warper.vercel.app/', host:'harmonic-reality-warper.vercel.app' },
-  { name:'Softglow Threshold', blurb:'Soft-clip / threshold processing tool.', href:'https://softglow-threshold.vercel.app/', host:'softglow-threshold.vercel.app' },
   { name:'NoDAW Mix Rescue', blurb:'Audio rescue & mix fix utilities.', href:'https://nodaw-audiorescue.pages.dev/', host:'nodaw-audiorescue.pages.dev' },
   { name:'Creative Culture / The Collective', blurb:'Cloud Run creative culture app.', href:'https://creative-culture-2-505465593925.us-west1.run.app/', host:'us-west1.run.app' },
   { name:'CoProducer', blurb:'Collaborative production companion.', href:'https://myaiplug.github.io/coproducer-web/', host:'myaiplug.github.io' },
@@ -18,6 +18,7 @@ const apps = [
   { name:'radar', blurb:'Radar utility / experiment.', href:'https://myaiplug.github.io/radar/', host:'myaiplug.github.io' },
 ];
 const experiments = [
+  { name:'Softglow Threshold', blurb:'Quiet liminal romantasy - Lina and the Archivist in a museum of residual feeling.', href:'https://softglow-threshold.vercel.app/', host:'softglow-threshold.vercel.app' },
   { name:'Bzportfolio', blurb:'Beez portfolio site.', href:'https://myaiplug.github.io/Bzportfolio/', host:'myaiplug.github.io' },
   { name:'THE BEATMOB STORE', blurb:'Beatmob storefront page.', href:'https://myaiplug.github.io/beatmob/', host:'myaiplug.github.io' },
   { name:'PromptCraft', blurb:'Prompt craft / form experiment.', href:'https://myaiplug.github.io/prompt-formx/', host:'myaiplug.github.io' },
@@ -27,7 +28,6 @@ const broken = [
   { name:'local-ai-patterns-playbook', blurb:'Deploy error - needs rebuild / fix.', status:'Deploy error' },
   { name:'local-ai-patterns-landing', blurb:'Deploy error - needs rebuild / fix.', status:'Deploy error' },
   { name:'HalfScrew2 / halfscrew.com', blurb:'Domain errors - DNS or hosting misconfigured.', status:'Domain errors' },
-  { name:'Liminal Stem Split', blurb:'onrender.com unreachable - app down or sleeping permanently.', status:'Unreachable' },
 ];
 function hostOf(href){
   try { return new URL(href).hostname.replace(/^www\./,''); } catch { return ''; }
@@ -52,3 +52,5 @@ document.getElementById('expGrid').innerHTML = experiments.map(i => card(i,'exp'
 document.getElementById('brokenGrid').innerHTML = broken.map(i => card(i,'broken')).join('');
 document.getElementById('appsCount').textContent = apps.length + ' live';
 document.getElementById('expCount').textContent = experiments.length + ' pages';
+document.getElementById('storeCount').textContent = store.length + ' live';
+document.getElementById('brokenCount').textContent = broken.length + ' items';
