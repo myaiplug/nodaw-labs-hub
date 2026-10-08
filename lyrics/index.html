@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lyrics from your vocal stem - NoDAW Labs</title>
+<meta name="description" content="Free, fully local lyric transcription. Drop a vocal stem, see its mel spectrogram and vocal regions, get timestamped lyrics. Nothing is uploaded.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="../">
+      <div class="logo">N</div>
+      <div><h1>NoDAW<span>(TM)</span> LABS</h1><p>LOCAL-FIRST CREATOR TECH</p></div>
+    </a>
+    <div class="status" id="isoStatus"><i></i> <span>Checking browser...</span></div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">FREE TOOL * RUNS IN YOUR BROWSER</div>
+    <h2>Lyrics from your vocal stem</h2>
+    <p>Drop a WAV or MP3 (a clean vocal stem works best). You get a mel spectrogram with the vocal regions marked, and timestamped lyrics from a local Whisper model. Your audio never leaves this tab.</p>
+  </section>
+
+  <label class="drop" id="drop" tabindex="0">
+    <input type="file" id="file" accept="audio/*,.wav,.mp3,.flac,.ogg,.m4a" hidden>
+    <strong>Drop a vocal stem here</strong>
+    <span>or click to choose a WAV / MP3 file</span>
+  </label>
+
+  <div class="opts">
+    <label>Model
+      <select id="model">
+        <option value="tiny.en-q5_1" data-mb="32">tiny.en (32 MB, English, fastest)</option>
+        <option value="base.en-q5_1" data-mb="60">base.en (60 MB, English, more accurate)</option>
+        <option value="tiny-q5_1" data-mb="32">tiny (32 MB, multilingual)</option>
+      </select>
+    </label>
+    <label>Language
+      <select id="language">
+        <option value="en">English</option><option value="es">Spanish</option><option value="fr">French</option>
+        <option value="de">German</option><option value="pt">Portuguese</option><option value="it">Italian</option>
+        <option value="ja">Japanese</option><option value="ko">Korean</option>
+      </select>
+    </label>
+    <label class="check"><input type="checkbox" id="wholeFile"> Ignore vocal detection (transcribe the whole file)</label>
+  </div>
+
+  <div class="panel" id="panel" hidden>
+    <div class="row between">
+      <div class="fname" id="fname"></div>
+      <div class="pills"><span class="pill" id="melPill">mel: -</span><span class="pill" id="vadPill">vocal: -</span><span class="pill" id="whisperPill">whisper: idle</span></div>
+    </div>
+    <div class="live-wrap">
+      <canvas id="live" width="900" height="160" aria-label="Live mel spectrogram around the playhead"></canvas>
+      <div class="live-label">LIVE MEL * <span id="liveTime">00:00.00</span></div>
+    </div>
+    <canvas id="overview" width="1200" height="120" aria-label="Whole-track mel spectrogram with vocal regions"></canvas>
+    <div class="legend"><span><b class="sw vad"></b>detected vocal region</span><span><b class="sw seg"></b>lyric line</span><span>click to seek</span></div>
+    <audio id="player" controls preload="auto"></audio>
+    <div class="progress" id="progressWrap" hidden><div class="bar" id="progressBar"></div><span id="progressText"></span></div>
+  </div>
+
+  <div class="panel" id="lyricsPanel" hidden>
+    <div class="row between">
+      <h3>LYRICS</h3>
+      <div class="actions">
+        <button id="copyBtn" disabled>Copy</button>
+        <button id="lrcBtn" disabled>.lrc</button>
+        <button id="srtBtn" disabled>.srt</button>
+        <button id="txtBtn" disabled>.txt</button>
+      </div>
+    </div>
+    <ol class="lyrics" id="lyrics"></ol>
+    <p class="hint">Machine transcription. Sung vocals are harder than speech, so check the words before you publish them.</p>
+  </div>
+
+  <footer>
+    <p class="cta">Need the vocal stem first? <a href="https://nodaw.gumroad.com/l/Liminal" target="_blank" rel="noopener">Split it locally with Liminal</a> (free demo for Windows).</p>
+    <p class="credit">Built on open-source <a href="https://github.com/wavey-ai/hush" target="_blank" rel="noopener">hush</a> / <a href="https://github.com/wavey-ai/mel-spec" target="_blank" rel="noopener">mel-spec</a> by wavey-ai (MIT) and <a href="https://github.com/ggml-org/whisper.cpp" target="_blank" rel="noopener">whisper.cpp</a> (MIT). Model weights: OpenAI Whisper (MIT) in GGML format. <a href="licenses/">Licenses</a></p>
+    <p class="credit"><a href="../">NoDAW Labs hub</a></p>
+  </footer>
+</div>
+<script src="lyrics-core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

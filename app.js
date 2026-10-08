@@ -7,6 +7,7 @@ const store = [
 ];
 const apps = [
   { name:'Liminal StemSplit', blurb:'6-stem split, local, no upload. The page the card should open.', href:'https://liminal-stemsplit.onrender.com/', host:'liminal-stemsplit.onrender.com' },
+  { name:'Lyrics from your vocal stem', blurb:'Free, local lyric transcription with timestamps. Mel spectrogram, vocal regions, Whisper in the browser. Nothing uploaded.', href:'https://nodaw-labs-hub.vercel.app/lyrics/', host:'nodaw-labs-hub.vercel.app/lyrics' },
   { name:'CoProducer', blurb:'Level pass and mix analysis. Same-night vocal sit.', href:'https://myaiplug.github.io/coproducer-web/', host:'myaiplug.github.io/coproducer-web' },
   { name:'ScrewAI', blurb:'Chop and screw engine. Web pass, not the unverified Windows exe.', href:'https://myaiplug.github.io/ScrewAI-App/', host:'myaiplug.github.io/ScrewAI-App' },
   { name:'NoDAW Mix Rescue', blurb:'Same-night mix rescue landing. Vocal, low end, release check.', href:'https://myaiplug.github.io/nodaw-audiorescue/', host:'myaiplug.github.io/nodaw-audiorescue' },

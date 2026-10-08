@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Licenses - Lyrics from your vocal stem</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../styles.css"></head>
+<body><div class="wrap"><section class="hero" style="text-align:left"><h2 style="font-size:28px">Open-source licenses</h2>
+<p style="margin-left:0">This page bundles or adapts the following MIT-licensed software. Their copyright and permission notices are reproduced in full below.</p></section>
+<div class="panel"><h3>hush - wavey-ai (MIT)</h3><p class="hint">https://github.com/wavey-ai/hush @ 92e425a. Adapted: whisper worker, mel worker, direct-mel whisper.cpp binding and build files.</p><pre id="hush"></pre></div>
+<div class="panel"><h3>mel-spec - wavey-ai (MIT)</h3><p class="hint">https://github.com/wavey-ai/mel-spec @ 338018e. Bundled: vendor/mel-spec (WASM build, SpeechToMel).</p><pre id="mel"></pre></div>
+<div class="panel"><h3>whisper.cpp / ggml - ggml authors (MIT)</h3><p class="hint">https://github.com/ggml-org/whisper.cpp @ d1be6fd. Bundled: vendor/whisper/hush-whisper.js (Emscripten build).</p><pre id="whisper"></pre></div>
+<div class="panel"><h3>Whisper model weights - OpenAI (MIT)</h3><p class="hint">GGML-converted weights are downloaded at runtime from huggingface.co/ggerganov/whisper.cpp. Not bundled in this site. Original: https://github.com/openai/whisper (MIT License, Copyright (c) 2022 OpenAI).</p></div>
+<footer><a href="../">Back to the tool</a></footer></div>
+<script>
+for (const [id, f] of [["hush","hush-LICENSE-MIT.txt"],["mel","mel-spec-LICENSE-MIT.txt"],["whisper","whisper.cpp-LICENSE.txt"]])
+  fetch(f).then(r => r.text()).then(t => { const el = document.getElementById(id); el.textContent = t; el.style.cssText = "white-space:pre-wrap;font-size:12px;color:#8b90a5"; });
+</script></body></html>
