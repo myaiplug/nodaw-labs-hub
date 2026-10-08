@@ -1,6 +1,7 @@
 // Mel + VAD worker: runs wavey-ai/mel-spec SpeechToMel (WASM) over decoded PCM.
 // Adapted from hush/web/app/src/worker.js (wavey-ai/hush, MIT). Audio never leaves the browser.
-const assetUrl = (p) => new URL(p, self.location.href).href;
+const ASSET_BASE = new URLSearchParams(self.location.search).get("base") || new URL(".", self.location.href).href;
+const assetUrl = (p) => new URL(p, ASSET_BASE).href;
 importScripts(assetUrl("vendor/mel-spec/mel_spec.js"), assetUrl("lyrics-core.js"));
 const { CONFIG } = self.LyricsCore;
 const ready = wasm_bindgen({ module_or_path: assetUrl("vendor/mel-spec/mel_spec_bg.wasm") });

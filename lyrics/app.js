@@ -7,8 +7,10 @@
   const { CONFIG } = Core;
   const $ = (id) => document.getElementById(id);
   const qs = new URLSearchParams(location.search);
+  // Static assets (scripts, WASM) may come from a CDN mirror; workers must be same-origin.
   const base = new URL(".", document.currentScript.src);
   const asset = (p) => new URL(p, base).href;
+  const workerUrl = (p) => `${new URL(p, location.href).href}?base=${encodeURIComponent(base.href)}`;
   const MODEL_BASE = "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/";
 
   const state = (window.__lyricsState = {
@@ -255,7 +257,7 @@
     whisperKey = key;
     const modelUrl = modelUrlFor($("model").value);
     state.modelUrl = modelUrl;
-    whisper = new Worker(asset("whisper-worker.js"));
+    whisper = new Worker(workerUrl("whisper-worker.js"));
     whisperReady = new Promise((resolve, reject) => {
       whisper.onmessage = (e) => {
         const m = e.data || {};
@@ -314,7 +316,7 @@
 
   function analyzeMel(pcm) {
     return new Promise((resolve, reject) => {
-      const w = new Worker(asset("mel-worker.js"));
+      const w = new Worker(workerUrl("mel-worker.js"));
       w.onmessage = (e) => {
         const m = e.data;
         if (m.type === "frames") {

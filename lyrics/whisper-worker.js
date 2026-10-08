@@ -1,8 +1,10 @@
 // Local Whisper worker. Adapted from hush/web/app/src/whisper-worker.js (wavey-ai/hush, MIT).
 // Loads a whisper.cpp WASM build (direct mel input) and a GGML model cached via the Cache API.
+const ASSET_BASE = new URLSearchParams(self.location.search).get("base") || new URL(".", self.location.href).href;
 if (self.name === "em-pthread") {
-  // Emscripten pthread workers re-load the script that created them; hand off to the runtime.
-  importScripts(new URL("vendor/whisper/hush-whisper.js", self.location.href).href);
+  // Emscripten pthread workers re-load the script that created them (this file, same query
+  // string); hand off to the runtime.
+  importScripts(new URL("vendor/whisper/hush-whisper.js", ASSET_BASE).href);
 } else {
   let moduleUrl = "";
   let modelUrl = "";
