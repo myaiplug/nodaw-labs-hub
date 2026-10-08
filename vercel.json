@@ -1,14 +1,38 @@
 {
   "redirects": [
-    { "source": "/lyrics", "destination": "/lyrics/", "permanent": false }
+    {
+      "source": "/lyrics",
+      "destination": "/lyrics/",
+      "permanent": false
+    },
+    {
+      "source": "/log",
+      "destination": "/log/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/log/assets/:path*",
+      "destination": "https://raw.githubusercontent.com/myaiplug/nodaw-labs-hub/main/log/assets/:path*"
+    }
   ],
   "headers": [
     {
       "source": "/lyrics/(.*)",
       "headers": [
-        { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" },
-        { "key": "Cross-Origin-Embedder-Policy", "value": "require-corp" },
-        { "key": "Cross-Origin-Resource-Policy", "value": "same-origin" }
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
+        }
       ]
     }
   ]

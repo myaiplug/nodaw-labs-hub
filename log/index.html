@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work log - NoDAW Labs</title>
+<meta name="description" content="Everything shipped for NoDAW Labs, newest first: tools, store pages, essays, posts and code, with links.">
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#0b0c12;--ink:#f2f3f8;--muted:#8b90a5;--faint:#565b72;--hair:rgba(255,255,255,.08);--hair2:rgba(255,255,255,.04);--brand:#8b7cf7;--brand2:#4fd1e8;--ok:#2dd4a0;--warn:#f5a524;--radius:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Inter,-apple-system,"Segoe UI",sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;background:radial-gradient(900px 500px at 15% -10%,rgba(139,124,247,.2),transparent 55%),radial-gradient(800px 480px at 90% 0%,rgba(79,209,232,.1),transparent 50%),#0b0c12}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px 80px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid var(--hair)}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none}
+.logo{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(145deg,#8b7cf7,#4fd1e8);font-weight:700;box-shadow:0 8px 24px -8px rgba(139,124,247,.7)}
+.brand h1{margin:0;font-size:15px;letter-spacing:.04em}.brand p{margin:2px 0 0;font-size:10px;letter-spacing:.18em;color:var(--muted);font-weight:600}
+.back{border:1px solid var(--hair);border-radius:999px;padding:8px 14px;font-size:12px;text-decoration:none;color:var(--muted);background:rgba(255,255,255,.03)}.back:hover{color:var(--ink)}
+.hero{padding:48px 0 18px;text-align:center}
+.eyebrow{font-size:11px;letter-spacing:.22em;color:var(--brand2);font-weight:600;margin-bottom:12px}
+.hero h2{margin:0;font-size:clamp(28px,5vw,44px);letter-spacing:-.02em}
+.hero p{color:var(--muted);max-width:620px;margin:12px auto 0;line-height:1.55;font-size:14px}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.stat{border:1px solid var(--hair);border-radius:999px;padding:6px 12px;font-size:12px;color:var(--muted);background:rgba(255,255,255,.03)}.stat b{color:var(--ink);font-weight:600}
+.filters{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:22px 0 8px}
+.filters button{font:inherit;font-size:12px;color:var(--muted);background:transparent;border:1px solid var(--hair);border-radius:999px;padding:7px 12px;cursor:pointer}
+.filters button[aria-pressed="true"]{color:var(--ink);border-color:rgba(139,124,247,.6);background:rgba(139,124,247,.14)}
+.day{margin-top:34px}
+.day-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;position:sticky;top:0;z-index:2;padding:12px 0;background:linear-gradient(180deg,#0b0c12 70%,rgba(11,12,18,0));}
+.day-head h3{margin:0;font-size:13px;letter-spacing:.14em;text-transform:uppercase}.day-head span{font-size:11px;color:var(--faint)}
+.list{display:grid;gap:12px}
+.entry{border:1px solid var(--hair);border-radius:var(--radius);background:rgba(255,255,255,.03);padding:16px 18px;transition:border-color .2s}
+.entry:hover{border-color:rgba(139,124,247,.35)}
+.entry.draft{border-style:dashed;background:rgba(255,255,255,.015)}
+.meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.badge{font-size:9px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--hair);border-radius:999px;padding:3px 8px;color:var(--muted)}
+.badge.live{color:var(--ok);border-color:rgba(45,212,160,.35)}.badge.draft{color:var(--warn);border-color:rgba(245,165,36,.4)}
+.entry h4{margin:0;font-size:16px;line-height:1.35}
+.entry p{margin:6px 0 0;color:var(--muted);font-size:13.5px;line-height:1.55}
+.entry .note{font-size:12px;color:var(--faint)}
+.links{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.links a{font-size:12px;text-decoration:none;border:1px solid var(--hair);border-radius:999px;padding:5px 10px;color:var(--ink);background:rgba(255,255,255,.02);display:inline-flex;gap:6px;align-items:center}
+.links a:hover{border-color:var(--brand)}
+.links a i{font-style:normal;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand2)}
+.links a.commit i{color:var(--brand)}.links a.post i{color:#9aa4ff}.links a.product i{color:var(--ok)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:12px}
+.gallery a{display:block;border:1px solid var(--hair);border-radius:10px;overflow:hidden;background:#12141c;aspect-ratio:16/9}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:48px;padding-top:18px;border-top:1px solid var(--hair);font-size:12px;color:var(--faint)}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="brand" href="/"><div class="logo">N</div><div><h1>NoDAW LABS</h1><p>LOCAL-FIRST CREATOR TECH</p></div></a><a class="back" href="/">&larr; Back to the hub</a></header>
+<section class="hero"><div class="eyebrow">WORK LOG</div><h2>What shipped, and when</h2>
+<p>Every tool, store page, essay, post and commit made for NoDAW Labs, newest first. Dates are US Eastern. Every link is public.</p>
+<div class="stats" id="stats"></div></section>
+<nav class="filters" id="filters" aria-label="Filter by type"></nav>
+<main id="log"><p class="empty">Loading the log...</p></main>
+<footer><span>NoDAW Labs * Louisville</span><span><a href="/">Hub</a> &middot; <a href="entries.json">entries.json</a></span></footer>
+</div>
+<script>
+(function () {
+  var TAGS = { all: "All", tool: "Tools", store: "Store", content: "Essays", social: "X posts", code: "Code", hub: "Hub", assets: "Assets", site: "Sites", ops: "Ops" };
+  var KIND = { live: "Live", commit: "Commit", post: "X", product: "Product", asset: "Image" };
+  var state = { tag: "all", data: null };
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function fmtDay(d) { var p = d.split("-"); var dt = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2], 12)); return dt.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }); }
+  function isExternal(u) { return /^https?:\/\//.test(u) && u.indexOf(location.host) === -1; }
+  function render() {
+    var root = document.getElementById("log"); root.textContent = "";
+    var entries = state.data.entries.filter(function (e) { return state.tag === "all" || (e.tags || []).indexOf(state.tag) !== -1; });
+    if (!entries.length) { root.appendChild(el("p", "empty", "Nothing here yet.")); return; }
+    var days = {}, order = [];
+    entries.forEach(function (e) { if (!days[e.date]) { days[e.date] = []; order.push(e.date); } days[e.date].push(e); });
+    order.forEach(function (d) {
+      var sec = el("section", "day"); sec.id = "d-" + d;
+      var head = el("div", "day-head"); head.appendChild(el("h3", null, fmtDay(d))); head.appendChild(el("span", null, days[d].length + (days[d].length === 1 ? " item" : " items")));
+      sec.appendChild(head);
+      var list = el("div", "list");
+      days[d].forEach(function (e) {
+        var card = el("article", "entry" + (e.status === "draft" ? " draft" : ""));
+        var meta = el("div", "meta");
+        meta.appendChild(el("span", "badge " + (e.status === "draft" ? "draft" : "live"), e.status === "draft" ? "Draft — awaiting approval" : "Shipped"));
+        (e.tags || []).forEach(function (t) { meta.appendChild(el("span", "badge", TAGS[t] || t)); });
+        card.appendChild(meta);
+        card.appendChild(el("h4", null, e.title));
+        card.appendChild(el("p", null, e.description));
+        if (e.note) card.appendChild(el("p", "note", e.note));
+        if (e.images && e.images.length) {
+          var g = el("div", "gallery");
+          e.images.forEach(function (im) { var a = el("a"); a.href = im.full || im.src; a.target = "_blank"; a.rel = "noopener"; var i = el("img"); i.src = im.src; i.alt = im.alt || ""; i.loading = "lazy"; i.decoding = "async"; a.appendChild(i); g.appendChild(a); });
+          card.appendChild(g);
+        }
+        if (e.links && e.links.length && e.status !== "draft") {
+          var ls = el("div", "links");
+          e.links.forEach(function (l) {
+            var a = el("a", l.kind || "live"); a.href = l.url;
+            if (isExternal(l.url)) { a.target = "_blank"; a.rel = "noopener"; }
+            a.appendChild(el("i", null, KIND[l.kind] || "Link")); a.appendChild(document.createTextNode(l.label));
+            ls.appendChild(a);
+          });
+          card.appendChild(ls);
+        }
+        list.appendChild(card);
+      });
+      sec.appendChild(list); root.appendChild(sec);
+    });
+  }
+  function setup(data) {
+    state.data = data;
+    var es = data.entries, dates = es.map(function (e) { return e.date; }).sort();
+    var links = es.reduce(function (n, e) { return n + (e.links ? e.links.length : 0); }, 0);
+    var stats = document.getElementById("stats");
+    [["Entries", es.length], ["Links", links], ["From", fmtDay(dates[0])], ["To", fmtDay(dates[dates.length - 1])]].forEach(function (s) { var x = el("span", "stat"); x.appendChild(document.createTextNode(s[0] + " ")); x.appendChild(el("b", null, String(s[1]))); stats.appendChild(x); });
+    var used = { all: 1 }; es.forEach(function (e) { (e.tags || []).forEach(function (t) { used[t] = 1; }); });
+    var f = document.getElementById("filters");
+    Object.keys(TAGS).forEach(function (t) {
+      if (!used[t]) return;
+      var b = el("button", null, TAGS[t]); b.type = "button"; b.setAttribute("aria-pressed", t === state.tag ? "true" : "false");
+      b.onclick = function () { state.tag = t; Array.prototype.forEach.call(f.children, function (c) { c.setAttribute("aria-pressed", c === b ? "true" : "false"); }); render(); };
+      f.appendChild(b);
+    });
+    render();
+  }
+  fetch("entries.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(setup).catch(function (err) {
+    var root = document.getElementById("log"); root.textContent = ""; root.appendChild(el("p", "empty", "The log could not load (" + err.message + "). Try again in a minute."));
+  });
+})();
+</script>
+</body>
+</html>

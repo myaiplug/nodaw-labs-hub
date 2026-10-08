@@ -1,0 +1,41 @@
+{
+ "project": "nodaw-labs-hub",
+ "projectId": "prj_3Ewlg9IrBhy1OWhHGJF9pJzn4ZrG",
+ "teamId": "team_YaB6vGyGfaVJf2mwpv4lNq31",
+ "note": "Files live on https://nodaw-labs-hub.vercel.app (Vercel file store sha1). The live index.html/app.js/styles.css differ from this repo's root files on purpose. Refresh with: add-log-entry.py sync-manifest <list_deployment_files output>.",
+ "recorded": null,
+ "files": {
+  "app.js": {
+   "sha": "1779f8df0c2825c7dac8e67ef0321564ef21f708",
+   "size": 5905
+  },
+  "index.html": {
+   "sha": "c1787edf0f22184dbdca8a8d4c59b711818b707f",
+   "size": 1866
+  },
+  "lyrics/index.html": {
+   "sha": "0e16b362f686926d0af9049038bb8ca783ccbcee",
+   "size": 4937
+  },
+  "lyrics/licenses/index.html": {
+   "sha": "d7142a223a6d3fa7031fdc85c6d389a57856b7c1",
+   "size": 5241
+  },
+  "lyrics/mel-worker.js": {
+   "sha": "5c8f41654650dc7dd4ad5bf22d2e62c641219e0f",
+   "size": 193
+  },
+  "lyrics/whisper-worker.js": {
+   "sha": "a9ac614ec19b9de164c2e2843b12301a833c450f",
+   "size": 197
+  },
+  "styles.css": {
+   "sha": "4efc5de5b2ab5f455167b9073037a6eeaf39eaac",
+   "size": 1544
+  },
+  "vercel.json": {
+   "sha": "48dd12e9207f285425c1c397ad5b01a528d5c2d7",
+   "size": 787
+  }
+ }
+}
