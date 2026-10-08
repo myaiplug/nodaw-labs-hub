@@ -4,10 +4,15 @@ prepare the additive Vercel redeploy.
 
 The live hub is NOT Git-connected and differs from this repo's main branch, so a redeploy must
 re-list every file that is already live. tools/hub-live-manifest.json records those files
-(path -> sha1/size, as stored by Vercel). `payload` writes create_deployment arguments that
-reference every live file by sha and inline only the changed log files. Images under
-log/assets/ are not deployed: vercel.json rewrites /log/assets/* to raw.githubusercontent.com
-(main), so they go live as soon as they are pushed.
+(path -> sha1/size, as stored by Vercel).
+
+What is deployed vs. served from GitHub:
+  * /log/entries.json and /log/assets/* are NOT deployed files. vercel.json rewrites them to
+    raw.githubusercontent.com/myaiplug/nodaw-labs-hub/main/log/..., so `add` (commit + push) puts
+    a new entry live within ~5 minutes (GitHub raw cache) with no Vercel redeploy.
+  * /log/index.html (the renderer) IS a deployed file. Only when it changes, run `payload` and
+    make the one create_deployment call it prints (same for vercel.json): every other live file is referenced by sha,
+    only changed files are inlined, so nothing already live is replaced.
 
 Usage:
   add-log-entry.py add --title T --desc D [--date YYYY-MM-DD] [--time HH:MM] [--tag tool ...]
@@ -18,8 +23,8 @@ Usage:
   add-log-entry.py sync-manifest TREE.json # rebuild the manifest from list_deployment_files output
 
 Link kinds: live (default), commit, post, product, asset. Tags: tool store content social code
-hub assets site ops. Run `add`, then call the Vercel connector once with the file printed at the
-end (CallDynamicTool user-Vercel-xai create_deployment), then run `verify`.
+hub assets site ops. Run `add`, wait ~5 min, then `verify`. Redeploy (payload) only if
+log/index.html or vercel.json changed.
 """
 import argparse, hashlib, json, os, re, subprocess, sys, time, urllib.request
 from datetime import datetime
@@ -31,7 +36,9 @@ OUT = os.environ.get("LOG_DEPLOY_OUT", "/workspace/nodaw-labs-hub/deploy/log-dep
 LIVE = "https://nodaw-labs-hub.vercel.app"
 ENTRIES = os.path.join(REPO, "log", "entries.json")
 MANIFEST = os.path.join(REPO, "tools", "hub-live-manifest.json")
-LOG_FILES = ["log/index.html", "log/entries.json"]  # deployed as real files; assets are rewritten
+# Files whose repo copy is what should be live (deployed from the repo). entries.json and
+# log/assets/* are not here: vercel.json rewrites them to GitHub raw.
+LOG_FILES = ["log/index.html", "vercel.json"]
 TAGS = {"tool", "store", "content", "social", "code", "hub", "assets", "site", "ops"}
 KINDS = {"live", "commit", "post", "product", "asset"}
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129 Safari/537.36"
@@ -149,8 +156,8 @@ def cmd_add(a):
     if not a.no_push:
         git("pull", "--rebase", "-q")
         git("push", "-q", "origin", "HEAD:main")
-        print(f"pushed {sha} to myaiplug/nodaw-labs-hub main")
-    cmd_payload(a)
+        print(f"pushed {sha} to myaiplug/nodaw-labs-hub main; live at {LIVE}/log/ within ~5 min")
+        print("Then run: add-log-entry.py verify   (no Vercel redeploy needed for entries)")
 
 
 def cmd_payload(a):
@@ -189,7 +196,7 @@ def cmd_verify(a):
     print(f"/log/ -> {why}")
     if live == local and ok_page:
         m = json.load(open(MANIFEST))
-        for path in LOG_FILES:
+        for path in ["log/index.html"]:  # vercel.json isn't public; sync-manifest records it
             p = os.path.join(REPO, path)
             m["files"][path] = {"sha": sha1(p), "size": os.path.getsize(p)}
         m["recorded"] = datetime.now(ET).strftime("%Y-%m-%dT%H:%M:%S%z")

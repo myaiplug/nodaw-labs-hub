@@ -13,6 +13,10 @@
   ],
   "rewrites": [
     {
+      "source": "/log/entries.json",
+      "destination": "https://raw.githubusercontent.com/myaiplug/nodaw-labs-hub/main/log/entries.json"
+    },
+    {
       "source": "/log/assets/:path*",
       "destination": "https://raw.githubusercontent.com/myaiplug/nodaw-labs-hub/main/log/assets/:path*"
     }
