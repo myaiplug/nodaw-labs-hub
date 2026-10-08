@@ -3,15 +3,19 @@
  "projectId": "prj_3Ewlg9IrBhy1OWhHGJF9pJzn4ZrG",
  "teamId": "team_YaB6vGyGfaVJf2mwpv4lNq31",
  "note": "Files live on https://nodaw-labs-hub.vercel.app (Vercel file store sha1). The live index.html/app.js/styles.css differ from this repo's root files on purpose. Refresh with: add-log-entry.py sync-manifest <list_deployment_files output>.",
- "recorded": "2026-10-08T03:50:00-0400",
+ "recorded": "2026-10-08T03:49:40-0400",
  "files": {
   "app.js": {
    "sha": "1779f8df0c2825c7dac8e67ef0321564ef21f708",
    "size": 5905
   },
   "index.html": {
-   "sha": "b6622f27189cc223a13f51da6ae5e6d13dd8661b",
-   "size": 1836
+   "sha": "c1787edf0f22184dbdca8a8d4c59b711818b707f",
+   "size": 1866
+  },
+  "log/index.html": {
+   "sha": "4fa818722726521cd08b15684420f7175569149f",
+   "size": 10475
   },
   "lyrics/index.html": {
    "sha": "0e16b362f686926d0af9049038bb8ca783ccbcee",
@@ -34,8 +38,9 @@
    "size": 1544
   },
   "vercel.json": {
-   "sha": "cb64f091baedd3a570ebb02da57372ba3a6ff9b3",
-   "size": 414
+   "sha": "073f861ce6bee21adacd2cbd193b20b6e17a1d62",
+   "size": 940
   }
- }
+ },
+ "deployment": "dpl_J89LfFGJkZ6PrnL2qz2gQCdHDmyL"
 }
