@@ -2,6 +2,7 @@ const store = [
   { name:'NoDAW Labs Store', blurb:'Official Shopify storefront. Gear, merch, and drops.', href:'https://www.nodawlabs.com', host:'nodawlabs.com' },
   { name:'NoDAW Gumroad', blurb:'Digital kits, Producer gear, and Syrup packs.', href:'https://nodaw.gumroad.com', host:'nodaw.gumroad.com' },
   { name:'Liminal StemSplit', blurb:'Live stem site. Isolate vocals, drums, bass, and other. Local, one-time. Was wrongly pointed at the Shopify product.', href:'https://liminal-stemsplit.onrender.com/', host:'liminal-stemsplit.onrender.com' },
+  { name:'Liminal Pro', blurb:'Local AI stem separation for Windows. $29 one-time.', href:'https://nodaw-pagekit.vercel.app/liminal-pro/', host:'nodaw-pagekit/liminal-pro' },
   { name:'Beat Mob Store', blurb:'Beat leases and the Beat Mob storefront. October build.', href:'https://beat-mob-store.vercel.app/', host:'beat-mob-store.vercel.app' },
   { name:'Beat Mob Pages', blurb:'Earlier Beat Mob storefront still on GitHub Pages.', href:'https://myaiplug.github.io/beatmob/', host:'myaiplug.github.io/beatmob' },
 ];
