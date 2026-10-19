@@ -29,7 +29,7 @@ const experiments = [
   { name:'PromptCraft', blurb:'Prompt system audit. Link corrected from prompt-formx to prompt-fixx.', href:'https://myaiplug.github.io/prompt-fixx/', host:'myaiplug.github.io/prompt-fixx' },
   { name:'ClearPath', blurb:'Accessibility fix brief. Link corrected from accessibility-form-brief.', href:'https://myaiplug.github.io/accessibility-fix-brief/', host:'myaiplug.github.io/accessibility-fix-brief' },
   { name:'HalfScrew', blurb:'Slow-motion potion interface. Domain halfscrew.com still needs DNS. Repo page is the live reflection.', href:'https://myaiplug.github.io/halfscrew/', host:'myaiplug.github.io/halfscrew' },
-  { name:'WAVE Instrument', blurb:'Centered reactor, skeuomorphic EQ, waveform engine. October repo.', href:'https://myaiplug.github.io/wave-instrument/', host:'myaiplug.github.io/wave-instrument' },
+  { name:'WAVE Instrument', blurb:'Centered reactor, skeuomorphic EQ, waveform engine. October repo.', href:'https://wavve-ten.vercel.app/', host:'wavve-ten.vercel.app' },
   { name:'Wavve', blurb:'October audio app repo. Pages URL if the workflow is on.', href:'https://myaiplug.github.io/wavve/', host:'myaiplug.github.io/wavve' },
   { name:'NoDAW Goated', blurb:'October experiment. Pages URL if the workflow is on.', href:'https://myaiplug.github.io/nodaw-goated/', host:'myaiplug.github.io/nodaw-goated' },
   { name:'radar', blurb:'Radar utility.', href:'https://myaiplug.github.io/radar/', host:'myaiplug.github.io/radar' },
