@@ -3,11 +3,11 @@
  "projectId": "prj_3Ewlg9IrBhy1OWhHGJF9pJzn4ZrG",
  "teamId": "team_YaB6vGyGfaVJf2mwpv4lNq31",
  "note": "Files live on https://nodaw-labs-hub.vercel.app (Vercel file store sha1). The live index.html/app.js/styles.css differ from this repo's root files on purpose. Refresh with: add-log-entry.py sync-manifest <list_deployment_files output>. thumbs/* (hub card screenshots) and log/shots/* (work log screenshots) are deployed binaries, not in this repo; their sha1s are recorded here.",
- "recorded": "2026-10-19T07:03:48-0400",
+ "recorded": "2026-10-19T08:17:34-0400",
  "files": {
   "app.js": {
-   "sha": "fd28d0c401ff8d9943567fc126316b3e7e4cfdf9",
-   "size": 9073
+   "sha": "b8019375e4b149c65e8d8d55e25b57e4fe9c141a",
+   "size": 9218
   },
   "index.html": {
    "sha": "c1787edf0f22184dbdca8a8d4c59b711818b707f",
@@ -24,6 +24,14 @@
   "log/shots/shot-beat-mob-store.webp": {
    "sha": "86292a239239f01ff093da72de9ad648f945f7a4",
    "size": 25610
+  },
+  "log/shots/shot-beatmob-b33-thumb.webp": {
+   "sha": "dab3ce292bd352b141c8235624d8ce44a201cd2d",
+   "size": 10740
+  },
+  "log/shots/shot-beatmob-b33.webp": {
+   "sha": "7bea1b23889e10204de54e9368a291de24060297",
+   "size": 46842
   },
   "log/shots/shot-beatmob-pages-thumb.webp": {
    "sha": "aad35c87b80942bb8daae4e210cedf07dd538796",
@@ -253,6 +261,10 @@
    "sha": "4efc5de5b2ab5f455167b9073037a6eeaf39eaac",
    "size": 1544
   },
+  "thumbs/beatmob-b33.webp": {
+   "sha": "7bea1b23889e10204de54e9368a291de24060297",
+   "size": 46842
+  },
   "thumbs/beatmob-pages.webp": {
    "sha": "4e9297b85826dcf412202fb809441cd1860f282f",
    "size": 11468
@@ -313,10 +325,6 @@
    "sha": "8446d6d7d29288ffd38669940532130b53889916",
    "size": 19534
   },
-  "thumbs/signal-chain.webp": {
-   "sha": "76f5ac57db9f4bee014c2448d206314aeb82af41",
-   "size": 15688
-  },
   "thumbs/softglow.webp": {
    "sha": "2978c5a71c170ff7da5aa571f237aa1a587221ab",
    "size": 13088
@@ -330,5 +338,5 @@
    "size": 940
   }
  },
- "deployment": "dpl_Ds4n6bQsz735CF8Lc26vg1RH91HS"
+ "deployment": "dpl_7LXDfeQQop7xGL2YHBy5WS7wEqN8"
 }
