@@ -3,11 +3,11 @@
  "projectId": "prj_3Ewlg9IrBhy1OWhHGJF9pJzn4ZrG",
  "teamId": "team_YaB6vGyGfaVJf2mwpv4lNq31",
  "note": "Files live on https://nodaw-labs-hub.vercel.app (Vercel file store sha1). The live index.html/app.js/styles.css differ from this repo's root files on purpose. Refresh with: add-log-entry.py sync-manifest <list_deployment_files output>. thumbs/* (hub card screenshots) and log/shots/* (work log screenshots) are deployed binaries, not in this repo; their sha1s are recorded here.",
- "recorded": "2026-10-19T08:26:58-0400",
+ "recorded": "2026-10-19T15:55:03-0400",
  "files": {
   "app.js": {
-   "sha": "04c968ef895d944d0942ae46b80948c45d41f359",
-   "size": 9527
+   "sha": "c911f88702c24f7f41134eb51b21f18b5a50bda8",
+   "size": 9671
   },
   "index.html": {
    "sha": "c1787edf0f22184dbdca8a8d4c59b711818b707f",
@@ -201,6 +201,14 @@
    "sha": "d2afb415ed41c5c3d8a6233fede2339b313ae417",
    "size": 42808
   },
+  "log/shots/shot-liminalpro-gumroad-thumb.webp": {
+   "sha": "644adebf1ac6629954a994a8be14698bc0af2681",
+   "size": 14688
+  },
+  "log/shots/shot-liminalpro-gumroad.webp": {
+   "sha": "1b8a4d9f4bbe7dbd2f88f06d2fc11e75b3358e3e",
+   "size": 51540
+  },
   "log/shots/shot-log-thumb.webp": {
    "sha": "eb0b1ecca57faadbd351d69bb9869418467875d3",
    "size": 9266
@@ -329,6 +337,10 @@
    "sha": "c83dfcde11cb5376e0d9de876be72af791243611",
    "size": 36924
   },
+  "thumbs/liminalpro-gumroad.webp": {
+   "sha": "e4858382fcb861cb6b98b1ee63cd2dd60933bee9",
+   "size": 26298
+  },
   "thumbs/nodaw-suite.webp": {
    "sha": "22a901861a9f95f88e9bd62bcb05cf0bd7dde609",
    "size": 12368
@@ -350,5 +362,5 @@
    "size": 940
   }
  },
- "deployment": "dpl_CLwBC71oQfQx5jATSM3e9WxZYVDw"
+ "deployment": "dpl_DEffrrRCbkFjA32qFUkd9tbKwU6q"
 }
