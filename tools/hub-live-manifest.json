@@ -2,12 +2,12 @@
  "project": "nodaw-labs-hub",
  "projectId": "prj_3Ewlg9IrBhy1OWhHGJF9pJzn4ZrG",
  "teamId": "team_YaB6vGyGfaVJf2mwpv4lNq31",
- "note": "Files live on https://nodaw-labs-hub.vercel.app (Vercel file store sha1). The live index.html/app.js/styles.css differ from this repo's root files on purpose. Refresh with: add-log-entry.py sync-manifest <list_deployment_files output>.",
- "recorded": "2026-10-18T22:25:32-0400",
+ "note": "Files live on https://nodaw-labs-hub.vercel.app (Vercel file store sha1). The live index.html/app.js/styles.css differ from this repo's root files on purpose. Refresh with: add-log-entry.py sync-manifest <list_deployment_files output>. thumbs/* (hub card screenshots) and log/shots/* (work log screenshots) are deployed binaries, not in this repo; their sha1s are recorded here.",
+ "recorded": "2026-10-19T07:03:48-0400",
  "files": {
   "app.js": {
-   "sha": "ddd348da176d217c824cd4386e559e36b2a5bd65",
-   "size": 5931
+   "sha": "fd28d0c401ff8d9943567fc126316b3e7e4cfdf9",
+   "size": 9073
   },
   "index.html": {
    "sha": "c1787edf0f22184dbdca8a8d4c59b711818b707f",
@@ -16,6 +16,222 @@
   "log/index.html": {
    "sha": "4fa818722726521cd08b15684420f7175569149f",
    "size": 10475
+  },
+  "log/shots/shot-beat-mob-store-thumb.webp": {
+   "sha": "0fc2b7c8e1f1c8843c2a2a353e2a484beb1132f2",
+   "size": 7890
+  },
+  "log/shots/shot-beat-mob-store.webp": {
+   "sha": "86292a239239f01ff093da72de9ad648f945f7a4",
+   "size": 25610
+  },
+  "log/shots/shot-beatmob-pages-thumb.webp": {
+   "sha": "aad35c87b80942bb8daae4e210cedf07dd538796",
+   "size": 7044
+  },
+  "log/shots/shot-beatmob-pages.webp": {
+   "sha": "bbc64f9b4af86a13ecf3e01826425626fbe63852",
+   "size": 21118
+  },
+  "log/shots/shot-blog-leading-silence-thumb.webp": {
+   "sha": "3f4a31e3301cc1bf8476683886621087b83662f0",
+   "size": 7862
+  },
+  "log/shots/shot-blog-leading-silence.webp": {
+   "sha": "0081bde64566ea3f7914d05c877fe916714b3958",
+   "size": 28042
+  },
+  "log/shots/shot-blog-sample-rate-thumb.webp": {
+   "sha": "b22a0be9bf82a5aa5800479b741a49449bd582d3",
+   "size": 13666
+  },
+  "log/shots/shot-blog-sample-rate.webp": {
+   "sha": "9907362046531b3e6c7b9e772dcb6430d60c6213",
+   "size": 50430
+  },
+  "log/shots/shot-blog-subsonic-rumble-thumb.webp": {
+   "sha": "640a416eed27170c999a18eb0a029db8087d386a",
+   "size": 9878
+  },
+  "log/shots/shot-blog-subsonic-rumble.webp": {
+   "sha": "60e7f3d6a99cc715fe9638690f1e9834ea266dd6",
+   "size": 35574
+  },
+  "log/shots/shot-blog-vocal-level-thumb.webp": {
+   "sha": "534d3d04a46c4863f773160cecd04dff9ca88c79",
+   "size": 11258
+  },
+  "log/shots/shot-blog-vocal-level.webp": {
+   "sha": "885c37bdaabfb2f1c59667ec1b855cea417bded0",
+   "size": 44670
+  },
+  "log/shots/shot-blog-wide-mono-thumb.webp": {
+   "sha": "50b7d7516ba051998ce2e6e2bf57385a8c6f158a",
+   "size": 13868
+  },
+  "log/shots/shot-blog-wide-mono.webp": {
+   "sha": "f7c314281379be2abcc7eb15dec513c5310d7109",
+   "size": 54508
+  },
+  "log/shots/shot-coproducer-analyze-thumb.webp": {
+   "sha": "6cb053bb9227b27a014d6e4465b6932c0987b06a",
+   "size": 9628
+  },
+  "log/shots/shot-coproducer-analyze.webp": {
+   "sha": "47ba02fa4d2bbc3eae99b7352a3f55d035a04af9",
+   "size": 35968
+  },
+  "log/shots/shot-coproducer-home-thumb.webp": {
+   "sha": "0f33a8e384e0800951f1aef9fd406b203b69bcbe",
+   "size": 13090
+  },
+  "log/shots/shot-coproducer-home.webp": {
+   "sha": "ffae6f49c99343f2e2e6b8ade46ca972d0a3670a",
+   "size": 47832
+  },
+  "log/shots/shot-coproducer-pricing-thumb.webp": {
+   "sha": "88388d05c67b882e362c4371a016815925cbf5ed",
+   "size": 8936
+  },
+  "log/shots/shot-coproducer-pricing.webp": {
+   "sha": "281d3cf9ecf815f72c68fd132afe5dacc919c0a3",
+   "size": 27254
+  },
+  "log/shots/shot-cross-lister-thumb.webp": {
+   "sha": "7c5e3f76ed91593b89477fe818137d27503a33ab",
+   "size": 13172
+  },
+  "log/shots/shot-cross-lister.webp": {
+   "sha": "2f5aa2d5993434e17a723498f319cdee7cd53ae6",
+   "size": 49860
+  },
+  "log/shots/shot-cyberforge-nf-thumb.webp": {
+   "sha": "b36bc0d09436db176fcd4ee73f63539e23e1a378",
+   "size": 8108
+  },
+  "log/shots/shot-cyberforge-nf.webp": {
+   "sha": "c84ffe8ebfacf510097109501a330ae6155e6051",
+   "size": 26690
+  },
+  "log/shots/shot-deepsplit-thumb.webp": {
+   "sha": "aad689bd6288d4131dcb4c2929b2e84d086b3fce",
+   "size": 14352
+  },
+  "log/shots/shot-deepsplit.webp": {
+   "sha": "e307d9412dfc7390fbaea28b2adb349d2b756dc1",
+   "size": 42960
+  },
+  "log/shots/shot-fantune-thumb.webp": {
+   "sha": "75e8b7574abf77ffb973c6ff7429de008172f520",
+   "size": 9182
+  },
+  "log/shots/shot-fantune.webp": {
+   "sha": "15f3f6b6e76fb3447415aeb768c287a736a63b53",
+   "size": 34526
+  },
+  "log/shots/shot-gumroad-liminal-thumb.webp": {
+   "sha": "1ce179a0abbb0d5eb9e7a7ad5fb27421d0fdf7c3",
+   "size": 17786
+  },
+  "log/shots/shot-gumroad-liminal.webp": {
+   "sha": "6eea5c3f4204986b9d9fddb4961c80ecf20f808f",
+   "size": 60908
+  },
+  "log/shots/shot-gumroad-liminalpro-thumb.webp": {
+   "sha": "9ef215c4001daad0d5be5da91d1de96f02e2236b",
+   "size": 9602
+  },
+  "log/shots/shot-gumroad-liminalpro.webp": {
+   "sha": "ced62003fdb28b48645c22641e24ae59d86be631",
+   "size": 33554
+  },
+  "log/shots/shot-halfscrew-thumb.webp": {
+   "sha": "b110edd51b9f471c24b33a420ce6a22b379655bc",
+   "size": 7016
+  },
+  "log/shots/shot-halfscrew.webp": {
+   "sha": "8775be19d583c00ffa0ef710b71936f4d056b73d",
+   "size": 29944
+  },
+  "log/shots/shot-hub-thumb.webp": {
+   "sha": "0571886c92e914fb08d425b2463980cd91e65034",
+   "size": 9452
+  },
+  "log/shots/shot-hub.webp": {
+   "sha": "d049f1886195cafcd6b41ddf69ccb0d723471961",
+   "size": 33508
+  },
+  "log/shots/shot-liminal-pro-funnel-thumb.webp": {
+   "sha": "1b757ef26dfead2b459d572f2a66ec8b0803bc2d",
+   "size": 6940
+  },
+  "log/shots/shot-liminal-pro-funnel.webp": {
+   "sha": "f967c5cd1f43b1078c03ee2eb957e4dc7139bcd5",
+   "size": 23906
+  },
+  "log/shots/shot-liminal-pro-page-thumb.webp": {
+   "sha": "70cd988099da94497fcd57237a4870b0fced9143",
+   "size": 15822
+  },
+  "log/shots/shot-liminal-pro-page.webp": {
+   "sha": "0fad211e28dff5f4768201b722a5951ce5886129",
+   "size": 52384
+  },
+  "log/shots/shot-liminal-stemsplit-thumb.webp": {
+   "sha": "9623dd4fccd70a889bfd2d43ea55c06ac767356b",
+   "size": 13118
+  },
+  "log/shots/shot-liminal-stemsplit.webp": {
+   "sha": "d2afb415ed41c5c3d8a6233fede2339b313ae417",
+   "size": 42808
+  },
+  "log/shots/shot-log-thumb.webp": {
+   "sha": "eb0b1ecca57faadbd351d69bb9869418467875d3",
+   "size": 9266
+  },
+  "log/shots/shot-log.webp": {
+   "sha": "b4aad0b88e95e3e803d389c45506c3c3a64e8e48",
+   "size": 35060
+  },
+  "log/shots/shot-lyrics-thumb.webp": {
+   "sha": "a62aae469e8af56a2a42e47035352523a94d5821",
+   "size": 8076
+  },
+  "log/shots/shot-lyrics.webp": {
+   "sha": "855b0541947f33820b6302b072e680abb95e0628",
+   "size": 35016
+  },
+  "log/shots/shot-mix-rescue-thumb.webp": {
+   "sha": "08ae5b408c5c5fcc58e103ac1e11529134da31aa",
+   "size": 10972
+  },
+  "log/shots/shot-mix-rescue.webp": {
+   "sha": "443ef855d90daa642b6e30b03a684ca7a42fbb9a",
+   "size": 42906
+  },
+  "log/shots/shot-retune-thumb.webp": {
+   "sha": "4f37539f6b2700001bd6e5b2955e676916ffba76",
+   "size": 11286
+  },
+  "log/shots/shot-retune.webp": {
+   "sha": "637cef6142ee39b2168a7d0a405d1e641bb8ecae",
+   "size": 39590
+  },
+  "log/shots/shot-warper-thumb.webp": {
+   "sha": "4291828fa09f5f4e418941edc3c03cc9bb5c2950",
+   "size": 5904
+  },
+  "log/shots/shot-warper.webp": {
+   "sha": "08b01c71360dfbf2fd992c707a709920f014a982",
+   "size": 23376
+  },
+  "log/shots/shot-wave-thumb.webp": {
+   "sha": "ef77dba1734432ecff10698fac6ff5e2bf71ae5e",
+   "size": 8832
+  },
+  "log/shots/shot-wave.webp": {
+   "sha": "92744d3e3fe17627d882ed3294467fe08082392b",
+   "size": 26278
   },
   "lyrics/index.html": {
    "sha": "0e16b362f686926d0af9049038bb8ca783ccbcee",
@@ -37,10 +253,82 @@
    "sha": "4efc5de5b2ab5f455167b9073037a6eeaf39eaac",
    "size": 1544
   },
+  "thumbs/beatmob-pages.webp": {
+   "sha": "4e9297b85826dcf412202fb809441cd1860f282f",
+   "size": 11468
+  },
+  "thumbs/blackbox.webp": {
+   "sha": "75958a8ad7aa4ea8c7cd29ff6dbcc7b080024b69",
+   "size": 15276
+  },
+  "thumbs/bz-audio-systems.webp": {
+   "sha": "d775c414a680c8a61203999703e741c648a044d8",
+   "size": 18252
+  },
+  "thumbs/bz-engine.webp": {
+   "sha": "d7aca1147b34cda472d43390c7291fee645c1607",
+   "size": 39704
+  },
+  "thumbs/bzportfolio.webp": {
+   "sha": "91833359fbe9f15aa1003fb2bd2b048f5a8b8b14",
+   "size": 24526
+  },
+  "thumbs/cyberforge.webp": {
+   "sha": "ec75e1fd87f7143c2c3f5bc67a49d9838073d892",
+   "size": 13764
+  },
+  "thumbs/deepsplit.webp": {
+   "sha": "6c7a41ffd7840cf509eb5b64ec64f381d04b1216",
+   "size": 23182
+  },
+  "thumbs/editpix.webp": {
+   "sha": "5714ac37aabbf89758206f7d9fa0882751d26374",
+   "size": 17190
+  },
+  "thumbs/fanout.webp": {
+   "sha": "92bcb5104c85d91347eb37351e1535a3974b8fea",
+   "size": 23402
+  },
+  "thumbs/fantune.webp": {
+   "sha": "15abe01a17ad7f956659115776afaaf453249edd",
+   "size": 16462
+  },
+  "thumbs/gumroad.webp": {
+   "sha": "79774a282c51dc222db6cd45d2931d14c16b23a7",
+   "size": 27320
+  },
+  "thumbs/halfscrew.webp": {
+   "sha": "adc83189016aaae1df16d8e517d2e1ab18f5cdc2",
+   "size": 14212
+  },
+  "thumbs/lacquer.webp": {
+   "sha": "c83dfcde11cb5376e0d9de876be72af791243611",
+   "size": 36924
+  },
+  "thumbs/nodaw-suite.webp": {
+   "sha": "22a901861a9f95f88e9bd62bcb05cf0bd7dde609",
+   "size": 12368
+  },
+  "thumbs/retune.webp": {
+   "sha": "8446d6d7d29288ffd38669940532130b53889916",
+   "size": 19534
+  },
+  "thumbs/signal-chain.webp": {
+   "sha": "76f5ac57db9f4bee014c2448d206314aeb82af41",
+   "size": 15688
+  },
+  "thumbs/softglow.webp": {
+   "sha": "2978c5a71c170ff7da5aa571f237aa1a587221ab",
+   "size": 13088
+  },
+  "thumbs/warper.webp": {
+   "sha": "0027ddba98cf640d1ed6496519f39f094177b05f",
+   "size": 11466
+  },
   "vercel.json": {
    "sha": "073f861ce6bee21adacd2cbd193b20b6e17a1d62",
    "size": 940
   }
  },
- "deployment": "dpl_DyVQXZ1uRjrWGk2HNuy6HKFk132K"
+ "deployment": "dpl_Ds4n6bQsz735CF8Lc26vg1RH91HS"
 }
