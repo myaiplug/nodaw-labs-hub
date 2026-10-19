@@ -3,11 +3,11 @@
  "projectId": "prj_3Ewlg9IrBhy1OWhHGJF9pJzn4ZrG",
  "teamId": "team_YaB6vGyGfaVJf2mwpv4lNq31",
  "note": "Files live on https://nodaw-labs-hub.vercel.app (Vercel file store sha1). The live index.html/app.js/styles.css differ from this repo's root files on purpose. Refresh with: add-log-entry.py sync-manifest <list_deployment_files output>. thumbs/* (hub card screenshots) and log/shots/* (work log screenshots) are deployed binaries, not in this repo; their sha1s are recorded here.",
- "recorded": "2026-10-19T08:17:34-0400",
+ "recorded": "2026-10-19T08:26:58-0400",
  "files": {
   "app.js": {
-   "sha": "b8019375e4b149c65e8d8d55e25b57e4fe9c141a",
-   "size": 9218
+   "sha": "04c968ef895d944d0942ae46b80948c45d41f359",
+   "size": 9527
   },
   "index.html": {
    "sha": "c1787edf0f22184dbdca8a8d4c59b711818b707f",
@@ -40,6 +40,14 @@
   "log/shots/shot-beatmob-pages.webp": {
    "sha": "bbc64f9b4af86a13ecf3e01826425626fbe63852",
    "size": 21118
+  },
+  "log/shots/shot-beatmob-ruby-thumb.webp": {
+   "sha": "bd49470ab2c40524ce65c8ef82070517fede2e2d",
+   "size": 14652
+  },
+  "log/shots/shot-beatmob-ruby.webp": {
+   "sha": "547066bfed75156b5f2e4c62996f132c70e81459",
+   "size": 60948
   },
   "log/shots/shot-blog-leading-silence-thumb.webp": {
    "sha": "3f4a31e3301cc1bf8476683886621087b83662f0",
@@ -269,6 +277,10 @@
    "sha": "4e9297b85826dcf412202fb809441cd1860f282f",
    "size": 11468
   },
+  "thumbs/beatmob-ruby.webp": {
+   "sha": "e707788a2cf5724fbeb270bbb0723736d713aad7",
+   "size": 29442
+  },
   "thumbs/blackbox.webp": {
    "sha": "75958a8ad7aa4ea8c7cd29ff6dbcc7b080024b69",
    "size": 15276
@@ -338,5 +350,5 @@
    "size": 940
   }
  },
- "deployment": "dpl_7LXDfeQQop7xGL2YHBy5WS7wEqN8"
+ "deployment": "dpl_CLwBC71oQfQx5jATSM3e9WxZYVDw"
 }

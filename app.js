@@ -3,7 +3,7 @@ const store = [
   { name:'NoDAW Gumroad', blurb:'Digital kits, Producer gear, and Syrup packs.', href:'https://nodaw.gumroad.com', host:'nodaw.gumroad.com', img:'thumbs/gumroad.webp', alt:'NoDAW Labs Gumroad storefront with the Liminal AI Stem Splitter free demo listing' },
   { name:'Liminal StemSplit', blurb:'Live stem site. Isolate vocals, drums, bass, and other. Local, one-time. Was wrongly pointed at the Shopify product.', href:'https://liminal-stemsplit.onrender.com/', host:'liminal-stemsplit.onrender.com' },
   { name:'Liminal Pro', blurb:'Local AI stem separation for Windows. $29 one-time.', href:'https://nodaw-pagekit.vercel.app/liminal-pro/', host:'nodaw-pagekit/liminal-pro' },
-  { name:'Beat Mob Store', blurb:'Beat leases and the Beat Mob storefront. October build.', href:'https://beat-mob-store.vercel.app/', host:'beat-mob-store.vercel.app' },
+  { name:'Beat Mob Store', blurb:'Beat leases and the Beat Mob storefront. October build.', href:'https://beat-mob-store-ruby.vercel.app/', host:'beat-mob-store-ruby.vercel.app', img:'thumbs/beatmob-ruby.webp', alt:'The Beat Mob store hero: Collective Vault Vol. 1 with the 10 Trap Instrumentals cover and play button' },
   { name:'Beat Mob Pages', blurb:'Earlier Beat Mob storefront still on GitHub Pages.', href:'https://myaiplug.github.io/beatmob/', host:'myaiplug.github.io/beatmob', img:'thumbs/beatmob-pages.webp', alt:'THE BEATMOB STORE hero title over a dark starfield' },
 ];
 const apps = [
@@ -44,7 +44,7 @@ const transfer = [
   { name:'WaveTrim', blurb:'Waveform trimmer with producer tag. Source ready. Not on the live grid yet.', href:'https://github.com/myaiplug/wavetrim', host:'github.com/myaiplug/wavetrim' },
   { name:'Local AI Patterns', blurb:'Playbook and landing. Deploy still errors. Source can transfer with the brand.', href:'https://github.com/myaiplug/local-ai-patterns-playbook', host:'needs deploy' },
   { name:'ffmpeg .bat rack', blurb:'Convert, trim, FX, test. You run them. Buyers get the file, not an install lesson.', href:'https://myaiplug.github.io/nodaw/', host:'in-house bats' },
-  { name:'Beat catalog', blurb:'Leases on the Beat Mob store. Also open to a full catalog handoff.', href:'https://beat-mob-store.vercel.app/', host:'beat-mob-store.vercel.app' },
+  { name:'Beat catalog', blurb:'Leases on the Beat Mob store. Also open to a full catalog handoff.', href:'https://beat-mob-store-ruby.vercel.app/', host:'beat-mob-store-ruby.vercel.app', img:'thumbs/beatmob-ruby.webp', alt:'The Beat Mob store hero: Collective Vault Vol. 1 with the 10 Trap Instrumentals cover and play button' },
 ];
 const broken = [
   { name:'local-ai-patterns-playbook', blurb:'Vercel project exists. Last deploy did not go ready. Rebuild before sending the link.', status:'Deploy error', href:'https://github.com/myaiplug/local-ai-patterns-playbook' },
