@@ -3,7 +3,7 @@
  "projectId": "prj_3Ewlg9IrBhy1OWhHGJF9pJzn4ZrG",
  "teamId": "team_YaB6vGyGfaVJf2mwpv4lNq31",
  "note": "Files live on https://nodaw-labs-hub.vercel.app (Vercel file store sha1). The live index.html/app.js/styles.css differ from this repo's root files on purpose. Refresh with: add-log-entry.py sync-manifest <list_deployment_files output>. thumbs/* (hub card screenshots) and log/shots/* (work log screenshots) are deployed binaries, not in this repo; their sha1s are recorded here.",
- "recorded": "2026-10-19T16:00:46-0400",
+ "recorded": "2026-10-19T22:13:43-0400",
  "files": {
   "app.js": {
    "sha": "f5c409e48fe636ef07005eb655d27474bc159de2",
