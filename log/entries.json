@@ -1,8 +1,9 @@
 {
  "title": "NoDAW Labs work log",
  "timezone": "America/New_York",
- "updated": "2026-11-04T19:33:46-0500",
+ "updated": "2026-11-09T10:31:27-0500",
  "entries": [
+  {"date": "2026-11-09", "time": "12:00", "title": "Liminal stem-splitter post on X", "description": "Posted the free demo + $29 Liminal Pro post.", "tags": ["social"], "status": "live", "links": [{"label": "X post", "url": "https://x.com/NoDAW_Studio/status/2119812259740352611", "kind": "post"}]},
   {"date": "2026-11-04", "time": "19:30", "title": "CoProducer Pro: $29 one-time across the site and store", "description": "Checked every CoProducer page, its offer markup, and the Shopify listing: CoProducer Pro is $29 one-time everywhere we publish it.", "tags": ["store"], "status": "live", "links": [{"label": "CoProducer pricing", "url": "https://myaiplug.github.io/coproducer-web/pricing.html", "kind": "live"}, {"label": "CoProducer on the NoDAW shop", "url": "https://shop.nodawlabs.com/products/nodaw-coproducer-audio-quality-analyzer-repair-tool", "kind": "product"}]},
   {"date": "2026-11-04", "time": "12:00", "title": "CoProducer phase post on X", "description": "Posted the phase/mono-collapse explainer with the spectrum dashboard image, linking the free checker and the $29 full tool.", "tags": ["social"], "status": "live", "links": [{"label": "X post", "url": "https://x.com/NoDAW_Studio/status/2118139300109852836", "kind": "post"}]},
   {"date": "2026-11-04", "time": "12:00", "title": "Reply to @IsaaCorva on Reaper vocal mixing", "description": "Replied on X with tips for mixing vocals in Reaper.", "tags": ["social"], "status": "live", "links": [{"label": "X reply", "url": "https://x.com/NoDAW_Studio/status/2118138188124271043", "kind": "post"}]},
